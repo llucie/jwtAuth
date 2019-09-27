@@ -18,6 +18,6 @@ func main() {
 	router.Methods("POST").Path("/refresh").HandlerFunc(Refresh)
 	router.Methods("GET").Path("/welcome").HandlerFunc(Welcome)
 
-	// Listen on port 8080
+	// Listen on port 4242
 	log.Fatal(http.ListenAndServe(":4242", router))
 }
